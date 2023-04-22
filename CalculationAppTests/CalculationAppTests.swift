@@ -9,6 +9,16 @@ import XCTest
 @testable import CalculationApp
 
 final class CalculationAppTests: XCTestCase {
+    var investmentAsset1: InvestmentAsset!
+    var investmentAsset2: InvestmentAsset!
+    var investmentAsset3: InvestmentAsset!
+    
+    override func setUp() {
+        super.setUp()
+        investmentAsset1 = InvestmentAsset(initialInvestmentAmount: 1000000, monthlyInvestmentAmount: 100000, annualInterestRate: 0.24, investmentYears: 10)
+        investmentAsset2 = InvestmentAsset(initialInvestmentAmount: 0, monthlyInvestmentAmount: 100000, annualInterestRate: 0.24, investmentYears: 50)
+        investmentAsset3 = InvestmentAsset(initialInvestmentAmount: 100000, monthlyInvestmentAmount: 100000, annualInterestRate: 0, investmentYears: 50)
+    }
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -31,6 +41,24 @@ final class CalculationAppTests: XCTestCase {
         self.measure {
             // Put the code you want to measure the time of here.
         }
+    }
+    
+    func testCalculateTotalAmount() {
+        
+        let result = investmentAsset1.finalValue
+        XCTAssertEqual(result, 59590979)
+    }
+    
+    func testCalculateTotalAmount2() {
+        
+        let result = investmentAsset2.finalValue
+        XCTAssertEqual(result, 722886405604)
+    }
+    
+    func testCalculateTotalAmount3() {
+        
+        let result = investmentAsset3.finalValue
+        XCTAssertEqual(result, 60100000)
     }
 
 }

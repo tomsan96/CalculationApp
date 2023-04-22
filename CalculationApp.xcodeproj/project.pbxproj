@@ -14,6 +14,7 @@
 		CBD5948C29F3D14C0046A2CA /* CalculationAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD5948B29F3D14C0046A2CA /* CalculationAppTests.swift */; };
 		CBD5949629F3D14C0046A2CA /* CalculationAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD5949529F3D14C0046A2CA /* CalculationAppUITests.swift */; };
 		CBD5949829F3D14C0046A2CA /* CalculationAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD5949729F3D14C0046A2CA /* CalculationAppUITestsLaunchTests.swift */; };
+		CBD594AB29F3EBFE0046A2CA /* InvestmentAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD594AA29F3EBFE0046A2CA /* InvestmentAsset.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		CBD5949129F3D14C0046A2CA /* CalculationAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculationAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBD5949529F3D14C0046A2CA /* CalculationAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationAppUITests.swift; sourceTree = "<group>"; };
 		CBD5949729F3D14C0046A2CA /* CalculationAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CBD594AA29F3EBFE0046A2CA /* InvestmentAsset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentAsset.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				CBD5947C29F3D14B0046A2CA /* ContentView.swift */,
 				CBD5947E29F3D14C0046A2CA /* Assets.xcassets */,
 				CBD5948029F3D14C0046A2CA /* Preview Content */,
+				CBD594AA29F3EBFE0046A2CA /* InvestmentAsset.swift */,
 			);
 			path = CalculationApp;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBD5947D29F3D14B0046A2CA /* ContentView.swift in Sources */,
+				CBD594AB29F3EBFE0046A2CA /* InvestmentAsset.swift in Sources */,
 				CBD5947B29F3D14B0046A2CA /* CalculationAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
