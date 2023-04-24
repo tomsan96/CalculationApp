@@ -45,4 +45,17 @@ class InvestmentAsset: ObservableObject {
         }
         return visits
     }
+    
+    func calculateCapital() -> Int? {
+        guard let monthlyInvestmentAmount = monthlyInvestmentAmount,
+              let investMonths = investMonths,
+              let initialInvestmentAmount = initialInvestmentAmount else { return nil }
+        return monthlyInvestmentAmount * investMonths + initialInvestmentAmount
+    }
+    
+    func calculateInvestmentIncome() -> Int? {
+        guard let finalTotalAmount = calculateFinalTotalAmount(),
+              let capital = calculateCapital() else { return nil }
+        return finalTotalAmount - capital
+    }
 }
