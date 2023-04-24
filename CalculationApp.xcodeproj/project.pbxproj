@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		CB706C8129F62A6400D40967 /* Unit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB706C8029F62A6400D40967 /* Unit.swift */; };
 		CB706C8429F6397000D40967 /* Int+CommaSeparatedYen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB706C8329F6397000D40967 /* Int+CommaSeparatedYen.swift */; };
+		CB706C8629F65CB900D40967 /* DisclaimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB706C8529F65CB900D40967 /* DisclaimerView.swift */; };
 		CBD5947B29F3D14B0046A2CA /* CalculationAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD5947A29F3D14B0046A2CA /* CalculationAppApp.swift */; };
 		CBD5947D29F3D14B0046A2CA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD5947C29F3D14B0046A2CA /* ContentView.swift */; };
 		CBD5947F29F3D14C0046A2CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBD5947E29F3D14C0046A2CA /* Assets.xcassets */; };
@@ -41,6 +42,7 @@
 /* Begin PBXFileReference section */
 		CB706C8029F62A6400D40967 /* Unit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Unit.swift; sourceTree = "<group>"; };
 		CB706C8329F6397000D40967 /* Int+CommaSeparatedYen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+CommaSeparatedYen.swift"; sourceTree = "<group>"; };
+		CB706C8529F65CB900D40967 /* DisclaimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisclaimerView.swift; sourceTree = "<group>"; };
 		CBD5947729F3D14B0046A2CA /* CalculationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalculationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBD5947A29F3D14B0046A2CA /* CalculationAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationAppApp.swift; sourceTree = "<group>"; };
 		CBD5947C29F3D14B0046A2CA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 				CBD5947C29F3D14B0046A2CA /* ContentView.swift */,
 				CBD594A629F3D5CB0046A2CA /* IntputItemView.swift */,
 				CBD594A829F3E14A0046A2CA /* OutputItemView.swift */,
+				CB706C8529F65CB900D40967 /* DisclaimerView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -303,6 +306,7 @@
 				CB706C8429F6397000D40967 /* Int+CommaSeparatedYen.swift in Sources */,
 				CBD594A929F3E14A0046A2CA /* OutputItemView.swift in Sources */,
 				CBD5947B29F3D14B0046A2CA /* CalculationAppApp.swift in Sources */,
+				CB706C8629F65CB900D40967 /* DisclaimerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
