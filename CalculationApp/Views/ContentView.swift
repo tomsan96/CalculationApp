@@ -14,6 +14,12 @@ struct ContentView: View {
     @State var investmentIncome: Int?
     @State var isShowingSheet = false
     @FocusState var isTextFieldFocused: UUID?
+    var isDisabledCalculateButton: Bool {
+        return investmentAsset.initialInvestmentAmountWithTenThousandYen == nil
+        || investmentAsset.monthlyInvestmentAmountWithTenThousandYen == nil
+        || investmentAsset.annualInterestRatePercent == nil
+        || investmentAsset.investmentYears == nil
+    }
 
     var body: some View {
         VStack {
@@ -27,6 +33,7 @@ struct ContentView: View {
                 investmentIncome = investmentAsset.calculateInvestmentIncome()
                 isTextFieldFocused = nil
             }
+            .disabled(isDisabledCalculateButton)
             OutputItemView(unit: .yen, title: "将来の資産合計金額", number: $finalTotalAmount)
             OutputItemView(unit: .yen, title: "元本", number: $capital)
             OutputItemView(unit: .yen, title: "運用収益", number: $investmentIncome)
