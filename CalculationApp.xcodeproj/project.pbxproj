@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB706C8129F62A6400D40967 /* Unit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB706C8029F62A6400D40967 /* Unit.swift */; };
+		CB706C8429F6397000D40967 /* Int+CommaSeparatedYen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB706C8329F6397000D40967 /* Int+CommaSeparatedYen.swift */; };
+		CB706C8A29F68F1100D40967 /* ja.md in Resources */ = {isa = PBXBuildFile; fileRef = CB706C8929F68F1100D40967 /* ja.md */; };
 		CBD5947B29F3D14B0046A2CA /* CalculationAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD5947A29F3D14B0046A2CA /* CalculationAppApp.swift */; };
 		CBD5947D29F3D14B0046A2CA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD5947C29F3D14B0046A2CA /* ContentView.swift */; };
 		CBD5947F29F3D14C0046A2CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBD5947E29F3D14C0046A2CA /* Assets.xcassets */; };
@@ -14,6 +17,9 @@
 		CBD5948C29F3D14C0046A2CA /* CalculationAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD5948B29F3D14C0046A2CA /* CalculationAppTests.swift */; };
 		CBD5949629F3D14C0046A2CA /* CalculationAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD5949529F3D14C0046A2CA /* CalculationAppUITests.swift */; };
 		CBD5949829F3D14C0046A2CA /* CalculationAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD5949729F3D14C0046A2CA /* CalculationAppUITestsLaunchTests.swift */; };
+		CBD594A729F3D5CB0046A2CA /* IntputItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD594A629F3D5CB0046A2CA /* IntputItemView.swift */; };
+		CBD594A929F3E14A0046A2CA /* OutputItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD594A829F3E14A0046A2CA /* OutputItemView.swift */; };
+		CBD594AB29F3EBFE0046A2CA /* InvestmentAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD594AA29F3EBFE0046A2CA /* InvestmentAsset.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CB706C8029F62A6400D40967 /* Unit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Unit.swift; sourceTree = "<group>"; };
+		CB706C8329F6397000D40967 /* Int+CommaSeparatedYen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+CommaSeparatedYen.swift"; sourceTree = "<group>"; };
+		CB706C8929F68F1100D40967 /* ja.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ja.md; sourceTree = "<group>"; };
 		CBD5947729F3D14B0046A2CA /* CalculationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalculationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBD5947A29F3D14B0046A2CA /* CalculationAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationAppApp.swift; sourceTree = "<group>"; };
 		CBD5947C29F3D14B0046A2CA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +53,9 @@
 		CBD5949129F3D14C0046A2CA /* CalculationAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculationAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBD5949529F3D14C0046A2CA /* CalculationAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationAppUITests.swift; sourceTree = "<group>"; };
 		CBD5949729F3D14C0046A2CA /* CalculationAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CBD594A629F3D5CB0046A2CA /* IntputItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntputItemView.swift; sourceTree = "<group>"; };
+		CBD594A829F3E14A0046A2CA /* OutputItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputItemView.swift; sourceTree = "<group>"; };
+		CBD594AA29F3EBFE0046A2CA /* InvestmentAsset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentAsset.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,9 +83,53 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CB706C7E29F62A4200D40967 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CBD594AA29F3EBFE0046A2CA /* InvestmentAsset.swift */,
+				CB706C8029F62A6400D40967 /* Unit.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CB706C7F29F62A4A00D40967 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CBD5947C29F3D14B0046A2CA /* ContentView.swift */,
+				CBD594A629F3D5CB0046A2CA /* IntputItemView.swift */,
+				CBD594A829F3E14A0046A2CA /* OutputItemView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CB706C8229F6381000D40967 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CB706C8329F6397000D40967 /* Int+CommaSeparatedYen.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CB706C8729F68EB500D40967 /* docs */ = {
+			isa = PBXGroup;
+			children = (
+				CB706C8829F68EE300D40967 /* PrivacyPolicy */,
+			);
+			path = docs;
+			sourceTree = "<group>";
+		};
+		CB706C8829F68EE300D40967 /* PrivacyPolicy */ = {
+			isa = PBXGroup;
+			children = (
+				CB706C8929F68F1100D40967 /* ja.md */,
+			);
+			path = PrivacyPolicy;
+			sourceTree = "<group>";
+		};
 		CBD5946E29F3D14B0046A2CA = {
 			isa = PBXGroup;
 			children = (
+				CB706C8729F68EB500D40967 /* docs */,
 				CBD5947929F3D14B0046A2CA /* CalculationApp */,
 				CBD5948A29F3D14C0046A2CA /* CalculationAppTests */,
 				CBD5949429F3D14C0046A2CA /* CalculationAppUITests */,
@@ -94,8 +150,10 @@
 		CBD5947929F3D14B0046A2CA /* CalculationApp */ = {
 			isa = PBXGroup;
 			children = (
+				CB706C8229F6381000D40967 /* Extensions */,
+				CB706C7F29F62A4A00D40967 /* Views */,
+				CB706C7E29F62A4200D40967 /* Models */,
 				CBD5947A29F3D14B0046A2CA /* CalculationAppApp.swift */,
-				CBD5947C29F3D14B0046A2CA /* ContentView.swift */,
 				CBD5947E29F3D14C0046A2CA /* Assets.xcassets */,
 				CBD5948029F3D14C0046A2CA /* Preview Content */,
 			);
@@ -231,6 +289,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB706C8A29F68F1100D40967 /* ja.md in Resources */,
 				CBD5948229F3D14C0046A2CA /* Preview Assets.xcassets in Resources */,
 				CBD5947F29F3D14C0046A2CA /* Assets.xcassets in Resources */,
 			);
@@ -258,6 +317,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBD5947D29F3D14B0046A2CA /* ContentView.swift in Sources */,
+				CBD594A729F3D5CB0046A2CA /* IntputItemView.swift in Sources */,
+				CBD594AB29F3EBFE0046A2CA /* InvestmentAsset.swift in Sources */,
+				CB706C8129F62A6400D40967 /* Unit.swift in Sources */,
+				CB706C8429F6397000D40967 /* Int+CommaSeparatedYen.swift in Sources */,
+				CBD594A929F3E14A0046A2CA /* OutputItemView.swift in Sources */,
 				CBD5947B29F3D14B0046A2CA /* CalculationAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -423,8 +487,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -432,9 +495,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = tomsan96.CalculationApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -452,8 +518,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -461,9 +526,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = tomsan96.CalculationApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

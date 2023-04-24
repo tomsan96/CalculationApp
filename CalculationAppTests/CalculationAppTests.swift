@@ -9,28 +9,47 @@ import XCTest
 @testable import CalculationApp
 
 final class CalculationAppTests: XCTestCase {
+    var investmentAsset = InvestmentAsset()
+    var investmentAssetWithNoAnnualInterestRatePercent = InvestmentAsset()
+    
+    override func setUp() {
+        super.setUp()
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        investmentAsset.initialInvestmentAmountWithTenThousandYen = 100
+        investmentAsset.monthlyInvestmentAmountWithTenThousandYen = 10
+        investmentAsset.annualInterestRatePercent = 24
+        investmentAsset.investmentYears = 10
+        
+        investmentAssetWithNoAnnualInterestRatePercent.initialInvestmentAmountWithTenThousandYen = 10
+        investmentAssetWithNoAnnualInterestRatePercent.monthlyInvestmentAmountWithTenThousandYen = 10
+        investmentAssetWithNoAnnualInterestRatePercent.annualInterestRatePercent = 0
+        investmentAssetWithNoAnnualInterestRatePercent.investmentYears = 50
+
     }
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    func testCalculateTotalAmount() {
+        
+        let result = investmentAsset.calculateFinalTotalAmount()
+        XCTAssertEqual(result, 59590979)
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+    
+    func testCalculateTotalAmountWithNoAnnualInterestRatePercent() {
+        
+        let result = investmentAssetWithNoAnnualInterestRatePercent.calculateFinalTotalAmount()
+        XCTAssertEqual(result, 60100000)
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    
+    func testCalculateCapital() {
+        
+        let result = investmentAsset.calculateCapital()
+        XCTAssertEqual(result, 13000000)
     }
+    
+    func testCalculateInvestmentIncome() {
+        
+        let result = investmentAsset.calculateInvestmentIncome()
+        XCTAssertEqual(result, 46590979)
+    }
+    
 
 }
