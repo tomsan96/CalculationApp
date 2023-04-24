@@ -38,7 +38,6 @@ struct ContentView: View {
             OutputItemView(unit: .yen, title: "将来の資産合計金額", number: $finalTotalAmount)
             OutputItemView(unit: .yen, title: "元本", number: $capital)
             OutputItemView(unit: .yen, title: "運用収益", number: $investmentIncome)
-            .padding(.top, 12)
         }
         .padding()
         .onTapGesture {
