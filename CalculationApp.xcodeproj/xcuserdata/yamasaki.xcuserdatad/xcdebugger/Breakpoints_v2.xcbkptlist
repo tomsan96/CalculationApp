@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "287BD585-BB44-48FB-AEC7-2363E7C7EFF0"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "353EE9AD-EF3F-46E7-88AF-40467CC08EAF"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CalculationApp/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "28C0DB83-8CE3-4F52-8D13-D53FE1B30438"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CalculationApp/InvestmentAsset.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "finalValue"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "28C0DB83-8CE3-4F52-8D13-D53FE1B30438 - 5a075fbdd21f0e1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CalculationApp.InvestmentAsset.finalValue.getter : Swift.Optional&lt;Swift.Int&gt;"
+                  moduleName = "CalculationApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yamasaki/myProjects/Swift/CalculationApp/CalculationApp/InvestmentAsset.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "112">
+               </Location>
+               <Location
+                  uuid = "28C0DB83-8CE3-4F52-8D13-D53FE1B30438 - 5a075fbdd21f0e1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CalculationApp.InvestmentAsset.finalValue.getter : Swift.Optional&lt;Swift.Int&gt;"
+                  moduleName = "CalculationApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yamasaki/myProjects/Swift/CalculationApp/CalculationApp/InvestmentAsset.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "148">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
