@@ -16,7 +16,7 @@ struct OutputItemView: View {
         HStack {
             Text(title)
             Spacer()
-            Text(verbatim: "\(String(number ?? 0))\(unit.rawValue)")
+            Text(verbatim: "\((number ?? 0).commaSeparatedYen())\(unit.rawValue)")
         }
     }
 }

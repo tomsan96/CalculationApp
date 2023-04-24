@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CB706C8129F62A6400D40967 /* Unit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB706C8029F62A6400D40967 /* Unit.swift */; };
+		CB706C8429F6397000D40967 /* Int+CommaSeparatedYen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB706C8329F6397000D40967 /* Int+CommaSeparatedYen.swift */; };
 		CBD5947B29F3D14B0046A2CA /* CalculationAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD5947A29F3D14B0046A2CA /* CalculationAppApp.swift */; };
 		CBD5947D29F3D14B0046A2CA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD5947C29F3D14B0046A2CA /* ContentView.swift */; };
 		CBD5947F29F3D14C0046A2CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBD5947E29F3D14C0046A2CA /* Assets.xcassets */; };
@@ -39,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		CB706C8029F62A6400D40967 /* Unit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Unit.swift; sourceTree = "<group>"; };
+		CB706C8329F6397000D40967 /* Int+CommaSeparatedYen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+CommaSeparatedYen.swift"; sourceTree = "<group>"; };
 		CBD5947729F3D14B0046A2CA /* CalculationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalculationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBD5947A29F3D14B0046A2CA /* CalculationAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationAppApp.swift; sourceTree = "<group>"; };
 		CBD5947C29F3D14B0046A2CA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -98,6 +100,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		CB706C8229F6381000D40967 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CB706C8329F6397000D40967 /* Int+CommaSeparatedYen.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		CBD5946E29F3D14B0046A2CA = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +131,7 @@
 		CBD5947929F3D14B0046A2CA /* CalculationApp */ = {
 			isa = PBXGroup;
 			children = (
+				CB706C8229F6381000D40967 /* Extensions */,
 				CB706C7F29F62A4A00D40967 /* Views */,
 				CB706C7E29F62A4200D40967 /* Models */,
 				CBD5947A29F3D14B0046A2CA /* CalculationAppApp.swift */,
@@ -289,6 +300,7 @@
 				CBD594A729F3D5CB0046A2CA /* IntputItemView.swift in Sources */,
 				CBD594AB29F3EBFE0046A2CA /* InvestmentAsset.swift in Sources */,
 				CB706C8129F62A6400D40967 /* Unit.swift in Sources */,
+				CB706C8429F6397000D40967 /* Int+CommaSeparatedYen.swift in Sources */,
 				CBD594A929F3E14A0046A2CA /* OutputItemView.swift in Sources */,
 				CBD5947B29F3D14B0046A2CA /* CalculationAppApp.swift in Sources */,
 			);
