@@ -33,7 +33,9 @@ struct ContentView: View {
                 investmentIncome = investmentAsset.calculateInvestmentIncome()
                 isTextFieldFocused = nil
             }
+            .buttonStyle(.borderedProminent)
             .disabled(isDisabledCalculateButton)
+            .padding(.vertical, 12)
             OutputItemView(unit: .yen, title: "将来の資産合計金額", number: $finalTotalAmount)
             OutputItemView(unit: .yen, title: "元本", number: $capital)
             OutputItemView(unit: .yen, title: "運用収益", number: $investmentIncome)
@@ -43,6 +45,7 @@ struct ContentView: View {
             .sheet(isPresented: $isShowingSheet) {
                 DisclaimerView()
             }
+            .padding(.top, 12)
         }
         .padding()
         .onTapGesture {

@@ -20,7 +20,7 @@ struct InputItemView: View {
             HStack {
                 TextField("", value: $number, format: .number)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
-                    .keyboardType(.decimalPad)
+                    .keyboardType(.numberPad)
                     .focused(isFocused, equals: isFocusedUUID)
                 Text(unit.rawValue)
             }
