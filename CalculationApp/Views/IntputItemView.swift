@@ -18,10 +18,14 @@ struct InputItemView: View {
         VStack(alignment: .leading) {
             Text(labelName)
             HStack {
-                TextField("", value: $number, format: .number)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                    .keyboardType(.numberPad)
-                    .focused(isFocused, equals: isFocusedUUID)
+                TextField(
+                    "",
+                    value: $number,
+                    format: .number
+                )
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+                .keyboardType(.numberPad)
+                .focused(isFocused, equals: isFocusedUUID)
                 Text(unit.rawValue)
             }
         }
